@@ -1,0 +1,61 @@
+/* Please ❤ this if you like it! */
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap");
+
+* {
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 300;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+h1 {
+  font-size: 2vw;
+}
+
+.typing-text {
+  width: 30ch;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-size: 2vw;
+  animation: typing 4s steps(18) infinite alternate,
+    blink 0.4s step-end infinite alternate;
+  text-shadow: 0px 0px 3px white;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 4vw;
+  }
+  .typing-text {
+    font-size: 8vw;
+  }
+}
